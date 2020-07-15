@@ -40,7 +40,7 @@ if __name__ == "__main__":
     """
     parser = argparse.ArgumentParser()
     parser.add_argument("--data_path", type=str, default='pyGRNN/sine.txt', help="data path")
-    parser.add_argument("--max_iter", type=int, default=50, help="number of epochs")
+    parser.add_argument("--max_iter", type=int, default=50, help="maximum iteration number")
     parser.add_argument("--step", type=int, default=20, help="step of creating available sigma mat")
     parser.add_argument("--samples", type=int, default=190, help="if you have 100 samples, please set it as 90, "
                                                                  "other 10 samples as test dataset")
@@ -51,7 +51,9 @@ if __name__ == "__main__":
     parser.add_argument("--beta", type=float, default=1.0, help="heuristic factor strength")
     parser.add_argument("--rho", type=float, default=0.5, help="volatile factor")
     parser.add_argument("--q", type=float, default=2.0, help="information intensity")
-    parser.add_argument("--edt", type=float, default=0.6, help="natural selection thresholds")
+    parser.add_argument("--edt", type=float, default=0.6, help="natural selection thresholds, it will decrease "
+                                                               "pheromone randomly when the possibility of next city"
+                                                               "exceeds this threshold")
     opt = parser.parse_args()
 
     aco_grnn = AcoGrnn(opt)

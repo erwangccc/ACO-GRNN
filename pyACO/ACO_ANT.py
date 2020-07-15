@@ -202,9 +202,9 @@ class Aco(object):
         self.best_ant.total_distance = 1 << 31  # 初始最大距离
         self.iter = 1  # 初始化迭代次数
 
-    def quit(self, evt=None):
-        """退出程序
-        :param evt:
+    def quit(self):
+        """
+        退出程序
         """
         self.__lock.acquire()
         self.__running = False

@@ -1,25 +1,41 @@
-## Guide
+---
+typora-root-url: ./
+---
 
-### Setup for GRNN
+## ACO-GRNN
 
-1. Set available sigma number：
+### Download
 
-   At ACO_GRNN.py line 38, give a number range from 10-50.
+```g
+git clone https://github.com/erwangccc/ACO-GRNN
+```
 
-● 设置需要样本的个数：
 
-在ACO_GRNN.py 39行设置samples
 
-**注意，当修改以上两个值之后，也相应修改ACO_ANT.py中的(city_num, ant_num)值**
+### setup for ACO-GRNN
 
-● 设置ACO算法的初始化参数：
+You can set up this project at ACO_GRNN.py.
 
-ACO_ANT.py 11行设置相应的初始化参数
 
-● 设置Y输出值的个数：
 
-在Grnn.py 146行，ACO_GRNN.py 19行设置对应Y输出值的个数
+### run ACO-GRNN
 
-● 设置最大迭代次数：
+```python
+python ACO-GRNN.py
+```
 
-在ACO_GRNN.py 45行设置最大迭代次数
+### results
+
+The optimized results of GRNN are as follows:
+
+![error_chart](/error_chart.jpg)
+
+
+
+![error_chart1](error_chart1.jpg)
+
+### credits:
+
+I referred to many fantastic repos during the implementation:
+
+ACO part is forked from [TSP_ACO](https://github.com/DiamonJoy/TSP/tree/master/TPS-ACO)
