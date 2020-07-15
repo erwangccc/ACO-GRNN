@@ -24,11 +24,11 @@ python ACO-GRNN.py
 
 The optimized results of GRNN are as follows:
 
-![error_chart](/error_chart.jpg)
+![error_chart](https://github.com/erwangccc/ACO-GRNN/blob/master/error_chart.jpg)
 
 
 
-![error_chart1](error_chart1.jpg)
+![error_chart1](https://github.com/erwangccc/ACO-GRNN/blob/master/error_chart.jpg)
 
 ### credits:
 
