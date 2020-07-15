@@ -1,8 +1,6 @@
 import argparse
 import tkinter
-
 import numpy as np
-
 import pyGRNN.Grnn
 from pyACO.ACO_ANT import Aco
 
