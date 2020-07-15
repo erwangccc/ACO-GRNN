@@ -1,0 +1,4 @@
+/.gitignore
+/.idea
+/sigma.txt
+/pyGRNN/.idea
