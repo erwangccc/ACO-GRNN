@@ -30,6 +30,6 @@ The optimized results of GRNN are as follows:
 
 ### Credits:
 
-I referred to many fantastic repos during the implementation:
+I referred to less fantastic repos during the implementation:
 
 ACO part is forked from [TSP_ACO](https://github.com/DiamonJoy/TSP/tree/master/TPS-ACO)
